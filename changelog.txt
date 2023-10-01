@@ -1,0 +1,23 @@
+1. Initial commit
+	webapi template
+
+2. Models
+2.1 Create domain models [Models/Domain]
+2.2 Install Nuget packages - EF - code first
+		microsoft.entityframeworkcore.sqlserver
+		microsoft.entityframeworkcore.tool
+2.3 Create dbcontext class
+2.4 Add connection strings to appsettings.json
+2.5 Inject DbContext
+2.6 Running EF Core Migration
+	Add-Migration "Initial Migration"
+	Update-Database
+
+3. Controllers
+3.1. Create Categories Controller
+		Create post method for category creation, create DTO's, inject dbcontext into the constructer, add and save async, return ok and response dto
+3.2. Create Categories Repositories
+
+4. Functional API 
+
+
