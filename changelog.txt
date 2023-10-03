@@ -15,9 +15,18 @@
 
 3. Controllers
 3.1. Create Categories Controller
-		Create post method for category creation, create DTO's, inject dbcontext into the constructer, add and save async, return ok and response dto
+		Create post method for category creation, create DTO's, inject dbcontext into the constructor, add and save async, return ok and response dto
 3.2. Create Categories Repositories
 
 4. Functional API 
+4.1. Added CORS policy
+
+5. Controllers / Get all categories
+	Create method in repository (intf.+impl.)
+5.1. Get Category by Id
+5.2. Edit Category
+5.3. Delete Category by Id
+
+6. Categories CRUD commit
 
 
