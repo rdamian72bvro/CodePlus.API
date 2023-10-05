@@ -29,4 +29,20 @@
 
 6. Categories CRUD commit
 
+7.CRUD operations for blogposts
+7.1. add blogpost funtionality
+
+8. Change domain model and relationships (Categories <-> BlogPosts many to many)
+8.1. update blogpost functionalities (complete CRUD)
+
+9. Upload image functionality
+9.1. add Domain model, run migration
+9.2. create Image Controller, serve static files
+9.3. upload images
+9.4. get all images
+
+10. home page and blod details page
+
+11* Categories, Blog posts, images and home page commit
+
 
