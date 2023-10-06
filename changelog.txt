@@ -45,4 +45,12 @@
 
 11* Categories, Blog posts, images and home page commit
 
+12. Add authentication functionality
+12.1 create roles and admin user
+12.2 create auth tables
+12.3 create jwt token
+12.4 role based auth
+
+13* Working Auth functionality commit
+
 

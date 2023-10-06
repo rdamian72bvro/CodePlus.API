@@ -2,6 +2,7 @@
 using CodePlus.API.Models.Domain;
 using CodePlus.API.Models.DTO;
 using CodePlus.API.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,6 +22,7 @@ namespace CodePlus.API.Controllers
 
         //
         [HttpPost]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> CreateCategory([FromBody] CreateCategoryRequestDto request) 
         {
             // Map DTO to Domain Model
@@ -90,6 +92,7 @@ namespace CodePlus.API.Controllers
         // PUT: https://localhost:7200/api/Categories/{id}
         [HttpPut]
         [Route("{id:Guid}")]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> EditCategory([FromRoute] Guid id, UpdateCategoryRequestDto request)
         {
             // Convert DTO to Domain Model
@@ -121,6 +124,7 @@ namespace CodePlus.API.Controllers
         // DELETE: https://localhost:7200/api/Categories/{id}
         [HttpDelete]
         [Route("{id:Guid}")]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> DeleteCategory([FromRoute] Guid id)
         {
             var category = await categoryRepository.DeleteAsync(id);
